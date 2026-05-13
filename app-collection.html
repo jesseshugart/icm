@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/icm.css">
+    <link rel="stylesheet" href="css/field-card.css">
+    <link rel="stylesheet" href="css/view-toggle.css">
+    <link rel="stylesheet" href="css/app-card.css">
+</head>
+
+<body>
+
+    <div class="bg-img"></div>
+    <div class="page-wrapper"> 
+
+    <section>
+        <div class="content-container">
+            <div class="container">
+
+            </div>
+
+            <div class="container">
+                <div class="app-title">
+                    <h2 class="app-name">
+                        DAS Applications
+                    </h2>
+                    <div class="ViewToggle" role="group" aria-label="View mode">
+                        <button class="ViewToggle-btn is-active" data-view="grid" aria-label="Grid view" aria-pressed="true">
+                            <svg width="16" height="16" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="6" height="5" rx="0" fill="currentColor"/>
+                                <rect x="10" y="1" width="6" height="5" rx="0" fill="currentColor"/>
+                                <rect x="1" y="8" width="6" height="5" rx="0" fill="currentColor"/>
+                                <rect x="10" y="8" width="6" height="5" rx="0" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <button class="ViewToggle-btn" data-view="list" aria-label="List view" aria-pressed="false">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="2" width="4" height="4" rx="0" fill="currentColor"/>
+                                <rect x="7" y="3" width="13" height="2" rx="0" fill="currentColor"/>
+                                <rect x="1" y="7" width="4" height="4" rx="0" fill="currentColor"/>
+                                <rect x="7" y="8" width="13" height="2" rx="0" fill="currentColor"/>
+                                <rect x="1" y="12" width="4" height="4" rx="0" fill="currentColor"/>
+                                <rect x="7" y="13" width="13" height="2" rx="0" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        <div class="container appCard-container">
+
+            <div class="appCard">
+                <div class="appCard-icon">
+                    <svg id="cloud" width="40" height="40" viewBox="0 0 395.41 345.84" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M336.15,101.24c1.08-45-28.51-84.63-70.49-97.07-44.04-13.05-90.08,5.27-113.62,44.24C89.58,21.75,19.79,57.28,3.44,121.3c-16.48,64.52,28.12,134.54,95.84,135.3l22.34.25h201.81c37.07-3.47,66.69-32.17,71.35-68.9,4.96-39.07-19.43-76.28-58.63-86.7ZM355.2,182.76c-2.49,19.73-18.92,34.64-40.33,34.62l-207.31-.27c-43.83-.06-75.05-41.57-66.16-83.08,9.03-42.14,54.15-66.54,94.52-49.07l32.58,14.1,17.7-29.93c14.08-23.8,42.15-34.64,68.34-26.64,25.74,7.86,42.38,32.25,41.71,59.91l-.72,29.7,29.81,7.56c19.57,4.96,32.36,23.22,29.85,43.11Z"/>
+                    </svg>
+                </div>
+                <div class="appCard-content">
+                    <div class="appCard-meta">
+                        <span class="appCard-name">AWS Cognito Standard Client </span>
+                        <span class="appCard-id">App ID: 2644069678232528441</span> 
+                    </div>
+                    <div class="appCard-chips">
+                        <span class="appCard-chip appCard-chip--blue">OIDC</span>
+                        <span class="appCard-chip appCard-chip--teal">Cloud</span>
+                        <span class="appCard-chip appCard-chip--green">Low Risk</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="appCard">
+                <div class="appCard-icon">
+                    <svg width="40" height="40" viewBox="0 0 395.41 345.84" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M336.15,101.24c1.08-45-28.51-84.63-70.49-97.07-44.04-13.05-90.08,5.27-113.62,44.24C89.58,21.75,19.79,57.28,3.44,121.3c-16.48,64.52,28.12,134.54,95.84,135.3l22.34.25h201.81c37.07-3.47,66.69-32.17,71.35-68.9,4.96-39.07-19.43-76.28-58.63-86.7ZM355.2,182.76c-2.49,19.73-18.92,34.64-40.33,34.62l-207.31-.27c-43.83-.06-75.05-41.57-66.16-83.08,9.03-42.14,54.15-66.54,94.52-49.07l32.58,14.1,17.7-29.93c14.08-23.8,42.15-34.64,68.34-26.64,25.74,7.86,42.38,32.25,41.71,59.91l-.72,29.7,29.81,7.56c19.57,4.96,32.36,23.22,29.85,43.11Z"/>
+                    </svg>
+                </div>
+                <div class="appCard-content">
+                    <div class="appCard-meta">
+                        <span class="appCard-name">DAS - ArcGIS GEO</span>
+                        <span class="appCard-id">App ID: 2644069678232528441</span>
+                    </div>
+                    <div class="appCard-chips">
+                        <span class="appCard-chip appCard-chip--blue">OIDC</span>
+                        <span class="appCard-chip appCard-chip--teal">Cloud</span>
+                        <span class="appCard-chip appCard-chip--green">Low Risk</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="appCard">
+                <div class="appCard-icon">
+                    <svg width="40" height="40" viewBox="0 0 395.41 345.84" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M336.15,101.24c1.08-45-28.51-84.63-70.49-97.07-44.04-13.05-90.08,5.27-113.62,44.24C89.58,21.75,19.79,57.28,3.44,121.3c-16.48,64.52,28.12,134.54,95.84,135.3l22.34.25h201.81c37.07-3.47,66.69-32.17,71.35-68.9,4.96-39.07-19.43-76.28-58.63-86.7ZM355.2,182.76c-2.49,19.73-18.92,34.64-40.33,34.62l-207.31-.27c-43.83-.06-75.05-41.57-66.16-83.08,9.03-42.14,54.15-66.54,94.52-49.07l32.58,14.1,17.7-29.93c14.08-23.8,42.15-34.64,68.34-26.64,25.74,7.86,42.38,32.25,41.71,59.91l-.72,29.7,29.81,7.56c19.57,4.96,32.36,23.22,29.85,43.11Z"/>
+                    </svg>
+                </div>
+                <div class="appCard-content">
+                    <div class="appCard-meta">
+                        <span class="appCard-name">IOP Cognito</span>
+                        <span class="appCard-id">App ID: 2644069678232528441</span>
+                    </div>
+                    <div class="appCard-chips">
+                        <span class="appCard-chip appCard-chip--blue">OIDC</span>
+                        <span class="appCard-chip appCard-chip--teal">Cloud</span>
+                        <span class="appCard-chip appCard-chip--green">Low Risk</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>      
+    <section>
+        <div class="content-container">
+            <div class="container"></div>
+        </div>
+    </section>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js" integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="js/field-card.js"></script>
+    <script src="js/view-toggle.js"></script>
+</body>
+</html>

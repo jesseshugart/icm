@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/icm.css">
+    <link rel="stylesheet" href="css/field-card.css">
+</head>
+
+<body>
+    <div class="app-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-nav">
+                <div class="sidebar-dropdown">
+                    <button class="sidebar-dropdown-trigger" aria-expanded="true" aria-controls="agency-apps-list">
+                        <span>My Agency Apps</span>
+                        <svg class="sidebar-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <ul class="sidebar-app-list" id="agency-apps-list">
+                        <li class="sidebar-app-item sidebar-app-item--active">
+                            <span class="sidebar-tree-line"></span>
+                            <a href="#" class="sidebar-app-link">
+                                <span class="sidebar-app-name">DAS</span>
+                                <svg class="sidebar-app-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar-app-item">
+                            <span class="sidebar-tree-line"></span>
+                            <a href="#" class="sidebar-app-link">
+                                <span class="sidebar-app-name">IOP</span>
+                                <svg class="sidebar-app-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar-app-item">
+                            <span class="sidebar-tree-line"></span>
+                            <a href="#" class="sidebar-app-link">
+                                <span class="sidebar-app-name">ODOT</span>
+                                <svg class="sidebar-app-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </aside>
+    
+    <div class="main">
+      <header></header>
+      <main>
+        <div class="content-container">
+            <div class="container app-detail-header">
+
+                <div class="app-detail-title">
+                    <div class="app-detail-icon">
+                        <img src="assets/svg/cube-icon.svg" alt="AWS Cognito Standard Client Icon" class="app-icon-image">
+                    </div>
+                    <h2 class="app-name">AWS Cognito Standard Client</h2>
+                </div>
+
+                <div class="container app-details">
+                    <div class="app-detail-info">
+                        <div class="col">
+                            <div class="group">
+                                <div class="detail-label">Owning Agency</div>
+                                <div class="detail">AWS Cloud Services</div>
+                            </div>
+                            <div class="group">
+                                <div class="detail-label">SSO Protocol</div>
+                                <div class="chip info-blue">OIDC</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="group">
+                                <div class="detail-label">SSO Integration Name</div>
+                                <div class="detail">AWS Cognito Standard Client</div>
+                            </div>
+                            <div class="group">
+                                <div class="detail-label">SSO Integration ID</div>
+                                <div class="detail">2644069678232528441</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="app-user-info">
+                        <div class="col">
+                            <div class="group">
+                                <div class="detail-label">Last Modified By</div>
+                                <div class="detail">Deshon Powell</div>
+                            </div>
+                            <div class="group">
+                                <div class="detail-label">Last Modified Date</div>
+                                <div class="detail">Tuesday, March 10 ‘26 12:51PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="container">
+            <div class="app-detail-container">
+                <div class="app-detail-title">
+                    <h2 class="app-name">
+                        Application Identity Compatibility Assessment
+                    </h2>
+                </div>
+                <div class="app-detail-button-container">
+                    <button class="btn-cancel">
+                        <div class="btn-txt">Cancel</div>
+                    </button>
+                    <button class="btn-save">
+                        <div class="btn-txt">Save</div>
+                    </button>
+                </div>
+            </div>
+            </div>
+
+            <div class="container FieldCard-container">
+                <div class="FieldCard" role="group" aria-labelledby="fc1-title">
+                    
+                    <div class="FieldCard-body">
+                    <div class="FieldCard-header">
+                        <h3 class="FieldCard-title" id="fc1-title">Authentication Initiation</h3>
+                    </div>
+                        <p class="FieldCard-description">How does this application initiate user authentication with the Identity Provider (IdP)?</p>
+                    </div>    
+                        <div class="FieldCard-select">
+                            <button class="FieldCard-trigger " aria-haspopup="listbox" aria-expanded="false" aria-controls="fc1-panel">
+                                <span class="FieldCard-value">Select an option...</span>
+                                <div id="chev" class="FieldCard-chevron chevron--down">
+                                <svg class="FieldCard-chevron-svg" version="1.1" viewbox="0 0 106.7 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+                                    <g class="chevron__container">
+                                    <line class="chevron__line1" x1="10" y1="50" x2="50" y2="50" />
+                                    <line class="chevron__line2" x1="90" y1="50" x2="50" y2="50" />
+                                    </g>    
+                                </svg>
+                                </div>
+                            </button>
+                            <div class="FieldCard-panel" id="fc1-panel" role="listbox">
+                                <span class="FieldCard-placeholder">Select an option...</span>
+                                <ul class="FieldCard-options">
+                                    <li class="FieldCard-option" role="option" aria-selected="false" data-value="sp-initiated">SP-Initiated Authentication</li>
+                                    <li class="FieldCard-option" role="option" aria-selected="false" data-value="idp-initiated">IDP-Initiated Authentication</li>
+                                    <li class="FieldCard-option" role="option" aria-selected="false" data-value="both">Both IDP &amp; SP Initiated Authentication</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+                <div class="FieldCard" role="group" aria-labelledby="fc2-title">
+                    <div class="FieldCard-body">
+                        <!-- <div class="FieldCard-status">Save changes</div> -->
+                        <div class="FieldCard-header">
+                            <h3 class="FieldCard-title" id="fc2-title">7x Prefix Validation</h3>
+                        </div>
+                        <p class="FieldCard-description">Does the application validate the OHID identifier using the 7x prefix rule?</p>
+                    </div>
+                    <div class="FieldCard-select">
+                        <button class="FieldCard-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="fc2-panel">
+                            <span class="FieldCard-value">Select an option...</span>
+                            <div class="FieldCard-chevron chevron--down">
+                                <svg class="FieldCard-chevron-svg" version="1.1" viewBox="0 0 106.7 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+                                    <g class="chevron__container">
+                                        <line class="chevron__line1" x1="10" y1="50" x2="50" y2="50" />
+                                        <line class="chevron__line2" x1="90" y1="50" x2="50" y2="50" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="FieldCard-panel" id="fc2-panel" role="listbox">
+                            <span class="FieldCard-placeholder">Select an option...</span>
+                            <ul class="FieldCard-options">
+                                <li class="FieldCard-option" role="option" aria-selected="false" data-value="sp-initiated">SP-Initiated Authentication</li>
+                                <li class="FieldCard-option" role="option" aria-selected="false" data-value="idp-initiated">IDP-Initiated Authentication</li>
+                                <li class="FieldCard-option" role="option" aria-selected="false" data-value="both">Both IDP &amp; SP Initiated Authentication</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+      </main>
+    </div>
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js" integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="js/field-card.js"></script>
+    <script>
+        document.querySelectorAll('.sidebar-dropdown-trigger').forEach(trigger => {
+            const listId = trigger.getAttribute('aria-controls');
+            const list = document.getElementById(listId);
+
+            // Set initial state based on aria-expanded
+            if (trigger.getAttribute('aria-expanded') === 'false') {
+                gsap.set(list, { height: 0 });
+            } else {
+                // already open — show names immediately without animation
+                list.querySelectorAll('.sidebar-app-name').forEach(name => {
+                    name.style.opacity = '1';
+                    name.style.transform = 'translateX(0)';
+                });
+            }
+
+            trigger.addEventListener('click', () => {
+                const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+                if (isExpanded) {
+                    list.classList.remove('is-open');
+                    // clear inline styles so CSS opacity: 0 base rule takes effect
+                    list.querySelectorAll('.sidebar-app-name').forEach(name => {
+                        name.style.opacity = '';
+                        name.style.transform = '';
+                    });
+                    gsap.to(list, { height: 0, duration: 0.25, ease: 'power2.inOut' });
+                    trigger.setAttribute('aria-expanded', 'false');
+                } else {
+                    // remove then re-add is-open after a reflow so animations replay
+                    list.classList.remove('is-open');
+                    void list.offsetWidth;
+                    list.classList.add('is-open');
+
+                    gsap.set(list, { height: 'auto' });
+                    const fullHeight = list.offsetHeight;
+                    gsap.fromTo(list, { height: 0 }, { 
+                        height: fullHeight, 
+                        duration: 0.25, 
+                        ease: 'power2.inOut', 
+                    onComplete: () => gsap.set(list, { height: 'auto' }) });
+                    trigger.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
