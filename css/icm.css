@@ -71,10 +71,12 @@
   box-sizing: border-box;
 }
 
+.dash-header .intro-title {
+}
+
 * {
   margin: 0;
 }
-
 
 html,
 body {
@@ -96,6 +98,11 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+}
+
+.bg-pattern img {
+    height: 588px;
+    width: 1800px;
 }
 
 /* Forms inherit typography */
@@ -187,21 +194,34 @@ table {
 /* =========================
    font embed 
 ========================= */
-
-/* @font-face {
-  font-family: 'Acid Grotesk medium';
+@font-face {
+  font-family: 'AG-thin';
+  src: url('/fonts/acid-grotesk-thin-font.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'AG-normal';
+  src: url('/fonts/acid-grotesk-normal-font.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'AG-medium';
   src: url('/fonts/acid-grotesk-medium-font.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Acid Grotesk Bold';
+  font-family: 'AG-bold';
   src: url('/fonts/acid-grotesk-bold-font.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-} */
+}
 
   @font-face {
     font-family: aspecta;
@@ -224,7 +244,14 @@ table {
     font-weight: 600;
   }
 
-
+  h1 {
+    font-family: aspecta, sans-serif;
+    font-weight: 200;
+    font-size: 68px;
+    line-height: 1;
+    letter-spacing: 0;
+    color: #d4dfeb;
+  }
 
   h2, h3 {
     font-family: aspecta, sans-serif;
@@ -232,18 +259,38 @@ table {
   }
 
   h3 {
-    font-family: aspecta, sans-serif;
-    font-weight: 400;
+    font-family: var(--font-family-body);
+    font-weight: 300;
     font-size: 20px;
     line-height: 24px;
-    color: var(--color-lte-gray);
+    color: var(
+    --color-lte-gray);
+    letter-spacing: .5px;
   }
+
+.tile-content h3 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 0 0 0 16px;
+    color: white;
+    flex-basis: 33%;
+}
 
   p {
     font-family: 'Source Sans 3', sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #8d94a3;
+}
+
+.expanded-content p {
+    color: #aeaeae;
+    font-size: 18px;
+}
+
+.expanded-content .row-group p {
+    font-size: 16px;
 }
 
 /* =========================
@@ -267,13 +314,17 @@ section {
 }
 
 .content-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1440px;
-    padding: 64px var(--space-32);
-    /* margin: 0 0 0 4%; */
+    padding: 112px var(--space-32);
     height: auto;
+}
+
+.dash-header .content-container {
+    padding: 72px var(--space-32);
 }
 
 .container {
@@ -443,6 +494,7 @@ h2.app-name {
     padding: var(--space-8) var(--space-16);
     border-radius: 16px;
     width: max-content;
+    /* background: #12161d; */
 }
 
 .chip.info-blue{
@@ -523,7 +575,7 @@ header{
     flex-direction: column;
     gap: var(--space-4);
     height: 100%;
-    padding-top: 50px;
+    padding-top: 121px;
 }
 
 .sidebar-dropdown-trigger {
